@@ -7,6 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <!-- Scripts for Custom Bobblehead Canvas Ad -->
+        <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
+        <script src="javascript/custom_canvas.js"></script>
+
 
 </head>
 <body>
@@ -26,16 +30,16 @@
             <!-- Wrapper for banners -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <a href="#"><img src="https://placehold.it/1920x200?text=Banner 1" alt="Image"></a>     
+                    <a href="collections.html"><img src="images/banner_starwars.jpg" alt="Star Wars Banner Ad"></a>     
                 </div>
                 <div class="item">
-                    <a href="#"><img src="https://placehold.it/1920x200?text=Banner 2" alt="Image"></a>     
+                    <a href="collections.html"><img src="images/banner_avengers.jpg" alt="Marvel Avengers Banner Ad"></a>     
                 </div>
                 <div class="item">
-                    <a href="#"><img src="https://placehold.it/1920x200?text=Banner 3" alt="Image"></a>     
+                    <a href="collections.html"><img src="images/banner_shipping.jpg" alt="Free Shipping Banner Ad"></a>     
                 </div>
                 <div class="item">
-                    <a hred="#"><img src="https://placehold.it/1920x200?text=Banner 4" alt="Image"></a>     
+                    <a hred="collections.html"><img src="images/banner_marvel.jpg" alt="Marvel Banner Ad"></a>     
                 </div>
             </div>
         </div>
@@ -45,11 +49,11 @@
     <div class="container">
         <div class="navbar-header">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Custom Made</a></li>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="custom_made.html">Custom Made</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -60,10 +64,10 @@
    <div class="row content">
        
         <div class="col-sm-2 sidenav">
-            <div class="well well-lg">
-                <p>Custom made ad canvas</p>
-                <canvas class="canvas" id="customMadeCanvas" width="250" height="400">
-                </canvas> 
+            <div class="">
+                <a href="custom_made.html">
+                <canvas class="canvas" id="canvas" width="250" height="500">Custom Bobblehead Ad</canvas>
+                </a> 
             </div>
         </div>
 
@@ -100,8 +104,8 @@
 
         <div class="col-sm-4">
             <div class="">
-                <p>Connect with us</p>
-                <p>Social media icons</p>
+                <h4>Connect with us:</h4>
+                <img src="images/social_media.jpg" height="60" width="230">
             </div>
             <div class="">
                 <img src="images/bobbleshop_logo.jpg" height="132" width="350">
@@ -110,7 +114,14 @@
 
         <div class="col-sm-4">
             <div class=""> 
-                <p>Privacy policy</p>
+                <h4>Privacy Notice</h4>
+
+                <p>We take precautions to protect your information. When you submit sensitive information via our website, your information is protected both online and offline.</p>
+
+                <p>Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way.</p>
+
+                <p>If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at 1800-000-000 or via email contact@bobbleshop.com.</p>
+
             </div>
         </div>
 
@@ -118,11 +129,11 @@
             <nav id="footerNav" class="navbar" role="navigation">
                 <div class="navbar">
                     <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Custom Made</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="custom_made.html">Custom Made</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -135,7 +146,7 @@
 		    <div class="row">
                 <div class="col-sm-6">
                     <div class="copyright">
-                        <p>&copy; Copyright 2017, All rights reserved</p>
+                        <p>&copy; Copyright 2017, All rights reserved.</p>
                     </div>
                 </div>
 
