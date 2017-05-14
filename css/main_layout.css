@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to bottom, lightsteelblue 0%, gainsboro 100%);
+}
+
+#banner {
+    margin: 0px auto;
+    padding: 1%;
+    width: 80%;
+    text-align: center;
+}
+
+#banner img {
+    border-radius: 20px;
+}
+
+.main-nav {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.canvas {
+    border-radius: 20px;
+}
