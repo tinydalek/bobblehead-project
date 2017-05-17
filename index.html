@@ -46,10 +46,10 @@
         </div>
     </div>
 
-<nav id="main-nav" class="navbar navbar-fixedtop" role="navigation">
-    <div class="container">
+<nav id="main-nav" class="navbar" role="navigation">
+    <div class="container-fluid">
         <div class="navbar">
-            <ul class="pager">
+            <ul class="nav nav-pills nav-justified">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="custom_made.html">Custom Made</a></li>
@@ -63,40 +63,153 @@
 
 <div class="container-fluid">    
    <div class="row content">
-       
-        <div class="col-sm-2 sidenav">
-            <div class="canvas">
-                <a href="custom_made.html">
-                <canvas class="canvas" id="canvas" width="220" height="470">Custom Bobblehead Ad</canvas>
-                </a> 
-            </div>
-        </div>
-
-        <div class="col-sm-8">
-            <p>10 featured products</p>
-            <p>Using accessible data table</p>
-        </div>
-
-        <div class="col-sm-2 sidenav">
-            <div class="well well-lg">
+       <div class="col-sm-2 sidenav">
+            <div class="">
                 <div class="well">
                     <form action="#">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search" name="search">
                             <div class="input-group-btn">
                                 <button type="submit" class="btn btn-default" data-toggle="collapse" data-target="#toggleSearch"><i class="glyphicon glyphicon-search"></i></button>
-                                <div id="toggleSearch" class="collapse in"><p>Show content from search.</p></div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="well">
-                    <h3>Bobblehead News</h3>
-                    <p>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-                    <p>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+            </div>
+            <div class="canvas">
+                <a href="custom_made.html">
+                    <canvas class="canvas" id="canvas" width="220" height="470">Custom Bobblehead Ad</canvas>
+                </a> 
+            </div>
+		</div>
+
+        <div class="col-sm-7" class="table-resposive">
+            <table class="table">
+                <colgroup>
+                    <col span="4">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="4">Featured Products</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-image"><img src="images/starwars_darth_vader.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_darth_maul.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_yoda.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_princess_leia.jpg" height="143px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">Darth Vader</td>
+                        <td class="product-name">Darth Maul</td>
+                        <td class="product-name">Yoda</td>
+                        <td class="product-name">Princess Leia</td>
+                    </tr>                    
+                    <tr>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                    </tr>                 
+                    <tr>
+                        <td class="item-image"><img src="images/marvel_universe_captain_america.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_universe_ghost_rider.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_universe_deadpool.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_universe_wolverine.jpg" height="143px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">Captain America</td>
+                        <td class="product-name">Ghost Rider</td>
+                        <td class="product-name">Deadpool</td>
+                        <td class="product-name">Wolverine</td>
+                    </tr>   
+                    <tr>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                    </tr>                    
+                    <tr>
+                        <td class="item-image"><img src="images/marvel_avengers_hawkeye.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_avengers_hulk.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_avengers_iron_man.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_avengers_scarlet_witch.jpg" height="143px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">Hawkeye</td>
+                        <td class="product-name">Hulk</td>
+                        <td class="product-name">Iron Man</td>
+                        <td class="product-name">Scarlet Witch</td>
+                    </tr> 
+                    <tr>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-3 sidenav">
+            <div class="well">
+                <img src="images/bobbleshop_news.jpg" height="100px" width="315px">
+                
+                <div  class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                Coming Soon: Pop! Games - Destiny Pop!s</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel=collapse collapse in">
+                            <div class="panel-body">
+                                <p>The hit video game Destiny is joining the Bobbleshop family!</p>
+                                <p>From the upcoming video game Destiny 2, releasing September 8th, 2017.</p>
+                                <p>You can now add your favorite Guardians Cayde-6, Ikora and Zavala to your Pop! vinyl collection.</p>
+                                <p>Collect them all this Summer!</p>
+                                <img src="images/news_destiny.jpg" alt="Destiny Bobblehead Image" height="143px" width="200px"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                Coming Soon: Pop! Keychains!</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Now you can take your favorite Overwatch heroes with you on the go with these Reaper and Tracer Pop! Keychains.</p>
+                                <p>Snap them up and slide them on to your key ring this Summer!</p>
+                                <img src="images/news_keychain.jpg" alt="Overwatch Keychain Image" height="143px" width="150px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent"#accordion" href="#collapse3">
+                                Pop! Anime: My Hero Academia</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Living in a world where quirks are the norm. Deku is often bullied for not having a quirk of his own!</p>
+                                <p>That’s okay, because Deku is now receiving the Pop! vinyl treatment!</p>
+                                <p>The series would not be complete without Deku’s childhood bully, Katsuki! Tenya and Ochaco join the series as well!</p>
+                                <p>In addition, the extremely tall and overly-muscular All Might arrives as a super-sized 6-inch Pop! vinyl!</p>
+                                <p>Collect them this Summer!</p>
+                                <img src="images/news_anime.jpg" alt="Deku Bobblehead Image" height="143px" width="200px">
+                            </div>
+                        </div>
+					</div>
                 </div>
             </div>
-        </div>
+		</div>
    </div>
 </div>
 
@@ -106,10 +219,10 @@
         <div class="col-sm-4">
             <div class="">
                 <h4>Connect with us:</h4>
-                <img src="images/social_media.jpg" height="60" width="230">
+                <img src="images/social_media_grey.jpg" height="60" width="230">
             </div>
             <div class="">
-                <img src="images/bobbleshop_logo.jpg" height="132" width="350">
+                <img src="images/bobbleshop_logo_grey.jpg" height="132" width="350">
             </div>  
         </div>
 

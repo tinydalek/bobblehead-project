@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, lightsteelblue 0%, gainsboro 100%);
+    background: linear-gradient(to bottom, lightsteelblue 20%, gainsboro 80%);
 }
 
 #banner {
@@ -14,10 +14,28 @@ body {
 }
 
 .main-nav {
-    width: 80%;
-    margin: 0px auto;
+    padding-bottom: 30px;
+}
+
+ul.nav {
+    width:80%;
+    margin: 0 auto;
+    list-style:none;
+    text-align:center; 
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 50%;
 }
 
 .canvas {
     border-radius: 20px;
+}
+
+footer {
+    background-color: lightslategrey;
+}
+
+.footer-bottom {
+    background-color: lightsteelblue;
 }
