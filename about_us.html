@@ -7,11 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main_layout.css"
+        <link rel="stylesheet" type="text/css" href="css/main_layout.css">
         <!-- Scripts for Custom Bobblehead Canvas Ad -->
         <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
         <script src="javascript/custom_canvas.js"></script>
-
+        <!-- Scripts for google map -->
+        <script src="javascript/map.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBVZ6Lawi20pQe-RSiVg08kZmJg0XoVuvU &callback=myMap" type="text/javascript"></script>
 
 </head>
 <body>
@@ -63,7 +65,7 @@
 
 <div class="container-fluid">    
    <div class="row content">
-       <div class="col-sm-2 sidenav">
+       <div class="col-sm-12 col-md-2 sidenav">
             <div class="">
                 <div class="well">
                     <form action="#">
@@ -83,13 +85,24 @@
             </div>
 		</div>
 
-        <div class="col-sm-7" class="">
+        <div class="col-sm-12 col-md-7" class="container">
+            <h2>About Us</h2>
+            <p>Bobbleshop is a purveyor of pop culture and licensed-focused collectibles company located in Sydney, Australia. Bobbleshop currently holds hundreds of licenses and the rights to create tens of thousands of characters - one of the largest portfolios in the pop culture and collectibles industry. Bobbleshop’s Pop! Vinyl is the number one stylized vinyl collectible on the market, selling millions of figures to collectors around the world.</p>
 
+            <div class="row">
+                <h4>Location:</h4>
+                <div class="col-sm-12 col-md-3">
+                    <p>Ultimo College,</p>
+                    <p>827 George Street,</p>
+                    <p>SYDNEY, NSW 2007</p>
+                </div>
+                <div class="col-sm-12 col-md-9" id="map" style="width:400px;height:200px;background:white"></div>
+            </div>
         </div>
 
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-12 col-md-3 sidenav">
             <div class="well">
-                <img src="images/bobbleshop_news.jpg" height="100px" width="315px">
+                <img class="img-responsive" src="images/bobbleshop_news.jpg" alt="Bobbleshop News Banner" height="100px" width="315px">
                 
                 <div  class="panel-group" id="accordion">
                     <div class="panel panel-default">
@@ -99,8 +112,9 @@
                                 Coming Soon: Pop! Games - Destiny Pop!s</a>
                             </h4>
                         </div>
-                        <div id="collapse1" class="panel=collapse collapse in">
+                        <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
+                                <p><small>Friday 14<sup>th</sup> April, 2017.</small></p>
                                 <p>The hit video game Destiny is joining the Bobbleshop family!</p>
                                 <p>From the upcoming video game Destiny 2, releasing September 8th, 2017.</p>
                                 <p>You can now add your favorite Guardians Cayde-6, Ikora and Zavala to your Pop! vinyl collection.</p>
@@ -118,6 +132,7 @@
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
+                                <p><small>Monday 10<sup>th</sup> April, 2017.</small></p>
                                 <p>Now you can take your favorite Overwatch heroes with you on the go with these Reaper and Tracer Pop! Keychains.</p>
                                 <p>Snap them up and slide them on to your key ring this Summer!</p>
                                 <img src="images/news_keychain.jpg" alt="Overwatch Keychain Image" height="143px" width="150px">
@@ -133,6 +148,7 @@
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
+                                <p><small>Thursday 6<sup>th</sup> April, 2017.</small></p>
                                 <p>Living in a world where quirks are the norm. Deku is often bullied for not having a quirk of his own!</p>
                                 <p>That’s okay, because Deku is now receiving the Pop! vinyl treatment!</p>
                                 <p>The series would not be complete without Deku’s childhood bully, Katsuki! Tenya and Ochaco join the series as well!</p>

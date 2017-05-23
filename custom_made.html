@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main_layout.css"
+        <link rel="stylesheet" type="text/css" href="css/main_layout.css">
         <!-- Scripts for Custom Bobblehead Canvas Ad -->
         <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
         <script src="javascript/custom_canvas.js"></script>
@@ -63,7 +63,7 @@
 
 <div class="container-fluid">    
    <div class="row content">
-       <div class="col-sm-2 sidenav">
+       <div class="col-sm-12 col-md-2 sidenav">
             <div class="">
                 <div class="well">
                     <form action="#">
@@ -83,13 +83,68 @@
             </div>
 		</div>
 
-        <div class="col-sm-7" class="">
-
+        <div class="col-sm-12 col-md-7" class="container">
+            <h2>Create Your Own Custom Bobblehead</h2>
+            <p>Fill in the details below and our awesome team will create a custom bobblehead just for you.</p>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" required>Name:</label>
+                        <div class="col-sm-10 col-md-8">
+                            <input class="form-control" id="focusedInput" type="text" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label">Email:</label>
+                        <div class="col-sm-10 col-md-8">
+                            <input class="form-control" id="" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm2 col-md-2 control-label">Bobblehead Gender:</label>
+                        <div class="radio" class="col-sm-10 col-md-8">
+                            <label class="radio-inline"><input type="radio" name="gender" value="male" checked="checked">Male</label>
+                            <label class="radio-inline"><input type="radio" name="gender" value="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1" class="col-sm2 col-md-2 control-label">Bobblehead Style:</label>
+                        <select class="form-contol" id="sel1" class="col-sm-10 col-md-8" required>
+                            <option name="stlye" value="">Select One</option>
+                            <option name="style" value="spiderman">Spiderman</option>
+                            <option name="style" value="iron_man">Iron Man</option>
+                            <option name="style" value="hulk">Hulk</option>
+                            <option name="style" value="captain_america">Captain America</option>
+                            <option name="style" value="wolverine">Wolverine</option>
+                            <option name="style" value="deadpool">Deadpool</option>
+                            <option name="style" value="vader">Darth Vader</option>
+                            <option name="style" value="obi_wan">Obi Wan Kenobi</option>
+                            <option name="style" value="leia">Princess Leia</option>
+                            <option name="style" value="yoda">Yoda</option>
+                            <option name="style" value="chewbacca">Chewbacca</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label">Description:</label>
+                        <div class="col-sm-10 col-md-8">
+                            <textarea class="form-control" rows="5" placeholder="Provide any extra details that might help us to create your bobblehead" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group" action="/action_page.php">
+                        <label class="col-sm-2 col-md-2 control-label">Choose a photo:</label>
+                        <div class="col-sm-3 col-md-3">
+                            <input type="file" name="pic" accept="image/*" required>
+                        </div>
+                        <div class="col-sm-7 col-md-7">
+                            <input type="submit" value="Upload Image">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit Form</button>
+                </form>
         </div>
 
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-12 col-md-3 sidenav">
             <div class="well">
-                <img src="images/bobbleshop_news.jpg" height="100px" width="315px">
+                <img class="img-responsive" src="images/bobbleshop_news.jpg" alt="Bobbleshop News Banner" height="100px" width="315px">
                 
                 <div  class="panel-group" id="accordion">
                     <div class="panel panel-default">
@@ -99,8 +154,9 @@
                                 Coming Soon: Pop! Games - Destiny Pop!s</a>
                             </h4>
                         </div>
-                        <div id="collapse1" class="panel=collapse collapse in">
+                        <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
+                                <p><small>Friday 14<sup>th</sup> April, 2017.</small></p>
                                 <p>The hit video game Destiny is joining the Bobbleshop family!</p>
                                 <p>From the upcoming video game Destiny 2, releasing September 8th, 2017.</p>
                                 <p>You can now add your favorite Guardians Cayde-6, Ikora and Zavala to your Pop! vinyl collection.</p>
@@ -118,6 +174,7 @@
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
+                                <p><small>Monday 10<sup>th</sup> April, 2017.</small></p>
                                 <p>Now you can take your favorite Overwatch heroes with you on the go with these Reaper and Tracer Pop! Keychains.</p>
                                 <p>Snap them up and slide them on to your key ring this Summer!</p>
                                 <img src="images/news_keychain.jpg" alt="Overwatch Keychain Image" height="143px" width="150px">
@@ -133,6 +190,7 @@
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
+                                <p><small>Thursday 6<sup>th</sup> April, 2017.</small></p>
                                 <p>Living in a world where quirks are the norm. Deku is often bullied for not having a quirk of his own!</p>
                                 <p>That’s okay, because Deku is now receiving the Pop! vinyl treatment!</p>
                                 <p>The series would not be complete without Deku’s childhood bully, Katsuki! Tenya and Ochaco join the series as well!</p>

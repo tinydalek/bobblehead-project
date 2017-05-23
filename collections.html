@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main_layout.css"
+        <link rel="stylesheet" type="text/css" href="css/main_layout.css">
+        <link rel="stylesheet" type="text/css" href="css/collections_table.css">
         <!-- Scripts for Custom Bobblehead Canvas Ad -->
         <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
         <script src="javascript/custom_canvas.js"></script>
@@ -63,7 +64,7 @@
 
 <div class="container-fluid">    
    <div class="row content">
-       <div class="col-sm-2 sidenav">
+       <div class="col-sm-12 col-md-2 sidenav">
             <div class="">
                 <div class="well">
                     <form action="#">
@@ -83,78 +84,142 @@
             </div>
 		</div>
 
-        <div class="col-sm-7" class="table-resposive">
+        <div class="col-sm-12 col-md-7" class="table-resposive">
             <table class="table">
                 <colgroup>
                     <col span="4">
                 </colgroup>
                 <thead>
                     <tr>
-                        <th scope="col" colspan="4">Featured Products</th>
+                        <th scope="col" colspan="4"></th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <th scope="row">Star Wars Collection</th>
+                    </tr>
                     <tr>
                         <td class="product-image"><img src="images/starwars_darth_vader.jpg" height="143px" width="200px"></td>
                         <td class="product-image"><img src="images/starwars_darth_maul.jpg" height="143px" width="200px"></td>
                         <td class="product-image"><img src="images/starwars_yoda.jpg" height="143px" width="200px"></td>
                         <td class="product-image"><img src="images/starwars_princess_leia.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_luke_skywalker.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_obi_wan.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_C3PO.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_R2D2.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_chewbacca.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_jabba.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_biker_scout.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_fighter_pilot.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_finn.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_rey.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_unmasked_vader.jpg" height="143px" width="200px"></td>
+                        <td class="product-image"><img src="images/starwars_x-wing.jpg" height="143px" width="200px"></td>
+
                     </tr>
                     <tr>
                         <td class="product-name">Darth Vader</td>
                         <td class="product-name">Darth Maul</td>
                         <td class="product-name">Yoda</td>
                         <td class="product-name">Princess Leia</td>
+                        <td class="product-name">Luke Skywalker</td>
+                        <td class="product-name">Obi Wan Kenobi</td>
+                        <td class="product-name">C3PO</td>
+                        <td class="product-name">R2D2</td>
+                        <td class="product-name">Chewbacca</td>
+                        <td class="product-name">Jabba the Hutt</td>
+                        <td class="product-name">Biker Scout</td>
+                        <td class="product-name">TIE Fighter Pilot</td>
+                        <td class="product-name">Finn</td>
+                        <td class="product-name">Rey</td>
+                        <td class="product-name">Unmasked Vader</td>
+                        <td class="product-name">Luke Skywalker (X-Wing Pilot)</td>
                     </tr>                    
                     <tr>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Marvel Universe Collection</th>
                     </tr>                 
                     <tr>
                         <td class="item-image"><img src="images/marvel_universe_captain_america.jpg" height="143px" width="200px"></td>
                         <td class="item-image"><img src="images/marvel_universe_ghost_rider.jpg" height="143px" width="200px"></td>
                         <td class="item-image"><img src="images/marvel_universe_deadpool.jpg" height="143px" width="200px"></td>
                         <td class="item-image"><img src="images/marvel_universe_wolverine.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_universe_dark_phoenix.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_universe_spiderman.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_universe_silver_surfer.jpg" height="143px" width="200px"></td>
                     </tr>
                     <tr>
                         <td class="product-name">Captain America</td>
                         <td class="product-name">Ghost Rider</td>
                         <td class="product-name">Deadpool</td>
                         <td class="product-name">Wolverine</td>
+                        <td class="product-name">Dark Phoenix</td>
+                        <td class="product-name">Spiderman</td>
+                        <td class="product-name">Silver Surfer</td>
                     </tr>   
                     <tr>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                    </tr>                    
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row">Marvel Avengers Collection</th>
+                    </tr>                   
                     <tr>
                         <td class="item-image"><img src="images/marvel_avengers_hawkeye.jpg" height="143px" width="200px"></td>
                         <td class="item-image"><img src="images/marvel_avengers_hulk.jpg" height="143px" width="200px"></td>
                         <td class="item-image"><img src="images/marvel_avengers_iron_man.jpg" height="143px" width="200px"></td>
                         <td class="item-image"><img src="images/marvel_avengers_scarlet_witch.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_avengers_captain_america.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_avengers_iron_man_unmasked.jpg" height="143px" width="200px"></td>
+                        <td class="item-image"><img src="images/marvel_avengers_thor.jpg" height="143px" width="200px"></td>
                     </tr>
                     <tr>
                         <td class="product-name">Hawkeye</td>
                         <td class="product-name">Hulk</td>
                         <td class="product-name">Iron Man</td>
                         <td class="product-name">Scarlet Witch</td>
+                        <td class="product-name">Captain America</td>
+                        <td class="product-name">Iron Man (Unmasked)</td>
+                        <td class="product-name">Thor</td>
                     </tr> 
                     <tr>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
-                        <td class="product-price">$19.99<button onclick="submit">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
+                        <td class="product-price">$19.99<button onclick="addtocart">BUY</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-12 col-md-3 sidenav">
             <div class="well">
-                <img src="images/bobbleshop_news.jpg" height="100px" width="315px">
+                <img class="img-responsive" src="images/bobbleshop_news.jpg" alt="Bobbleshop News Banner" height="100px" width="315px">
                 
                 <div  class="panel-group" id="accordion">
                     <div class="panel panel-default">
@@ -164,8 +229,9 @@
                                 Coming Soon: Pop! Games - Destiny Pop!s</a>
                             </h4>
                         </div>
-                        <div id="collapse1" class="panel=collapse collapse in">
+                        <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
+                                <p><small>Friday 14<sup>th</sup> April, 2017.</small></p>
                                 <p>The hit video game Destiny is joining the Bobbleshop family!</p>
                                 <p>From the upcoming video game Destiny 2, releasing September 8th, 2017.</p>
                                 <p>You can now add your favorite Guardians Cayde-6, Ikora and Zavala to your Pop! vinyl collection.</p>
@@ -183,6 +249,7 @@
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
+                                <p><small>Monday 10<sup>th</sup> April, 2017.</small></p>
                                 <p>Now you can take your favorite Overwatch heroes with you on the go with these Reaper and Tracer Pop! Keychains.</p>
                                 <p>Snap them up and slide them on to your key ring this Summer!</p>
                                 <img src="images/news_keychain.jpg" alt="Overwatch Keychain Image" height="143px" width="150px">
@@ -198,6 +265,7 @@
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
+                                <p><small>Thursday 6<sup>th</sup> April, 2017.</small></p>
                                 <p>Living in a world where quirks are the norm. Deku is often bullied for not having a quirk of his own!</p>
                                 <p>That’s okay, because Deku is now receiving the Pop! vinyl treatment!</p>
                                 <p>The series would not be complete without Deku’s childhood bully, Katsuki! Tenya and Ochaco join the series as well!</p>
