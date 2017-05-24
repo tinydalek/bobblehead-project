@@ -58,13 +58,15 @@ function validateForm() {
     }
 
 // Javascript Task 2. Confirm contact form details
+
     var confirmed = confirm("Thank you for your enquiry. Please confirm the details you have entered:" + "\n"
                 + "Full Name: " + name + "\n"
                 + "Email: " + email + "\n"
                 + "Phone Number: " + phone + "\n"
                 + "Enquiy Type: " + select + "\n"
                 + "Comments: " + comment);
-    // If details are correct, submit the form
+
+    // If details are confirmed by user, submit the form
     if (confirmed == true) {
         alert ("Thank you, your enquiry has bee submitted");
     }
