@@ -6,6 +6,7 @@
     <title>Bobbleshop Website</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascript/tether.min.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/main_layout.css">
@@ -100,7 +101,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 01: STAR WARS, DARTH VADER - The Ultimate Villain!"><img src="images/starwars_darth_vader.jpg" height="143px" width="200px"></a></td>
+                                <td class="product-image"><a href="#" rel="tooltip" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="<b>VINYL POP 01: STAR WARS, DARTH VADER - The Ultimate Villain!</b>"><img src="images/starwars_darth_vader.jpg" height="143px" width="200px"></a></td>
                                 <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 09: STAR WARS, DARTH MAUL - Sith Lord and Master of the Double-bladed Lightsaber"><img src="images/starwars_darth_maul.jpg" height="143px" width="200px"></a></td>
                                 <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 02: STAR WARS, YODA -Legendary Jedi Master"><img src="images/starwars_yoda.jpg" height="143px" width="200px"></a></td>
                                 <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 04: STAR WARS, PRINCESS LEIA - The Ultimate Heroine!"><img src="images/starwars_princess_leia.jpg" height="143px" width="200px"></a></td>
@@ -292,6 +293,14 @@
 
         <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                });
+            });
+            </script>
 </body>
 
 </html>
