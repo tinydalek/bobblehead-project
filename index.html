@@ -6,18 +6,19 @@
     <title>Bobbleshop Website</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="javascript/tether.min.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/main_layout.css">
+    <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
     <!-- Scripts for Custom Bobblehead Canvas Ad -->
     <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
     <script src="javascript/custom_canvas.js"></script>
     <!-- Script for Javascript Task 6, Rich Tooltip -->
+    <script src="javascript/tether.min.js"></script>
     <script src="javascript/tooltip.js"></script>
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
     <!-- Scripts for JavaScript Task 7, Search functionality. -->
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="javascript/typeahead.bundle.js"></script>
     <script src="javascript/search.js"></script>
 
 </head>
@@ -74,8 +75,8 @@
                 <div class="col-sm-12 col-md-2 sidenav">
                     <div class="">
                         <div class="well">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="search" data-provide="typeahead" placeholder="Search">
+                            <div class="input-group" id="search">
+                                <input type="text" class="form-control" class="typeahead" data-provide="typeahead" placeholder="Search">
                                 <div class="input-group-btn">
                                     <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
                                 </div>
@@ -101,10 +102,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="product-image"><a href="#" rel="tooltip" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="<b>VINYL POP 01: STAR WARS, DARTH VADER - The Ultimate Villain!</b>"><img src="images/starwars_darth_vader.jpg" height="143px" width="200px"></a></td>
-                                <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 09: STAR WARS, DARTH MAUL - Sith Lord and Master of the Double-bladed Lightsaber"><img src="images/starwars_darth_maul.jpg" height="143px" width="200px"></a></td>
-                                <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 02: STAR WARS, YODA -Legendary Jedi Master"><img src="images/starwars_yoda.jpg" height="143px" width="200px"></a></td>
-                                <td class="product-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 04: STAR WARS, PRINCESS LEIA - The Ultimate Heroine!"><img src="images/starwars_princess_leia.jpg" height="143px" width="200px"></a></td>
+                                <td class="product-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 01: STAR WARS, DARTH VADER - The Ultimate Villain!"><img src="images/starwars_darth_vader.jpg" height="143px" width="200px"></a></td>
+                                <td class="product-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 09: STAR WARS, DARTH MAUL - Sith Lord and Master of the Double-bladed Lightsaber"><img src="images/starwars_darth_maul.jpg" height="143px" width="200px"></a></td>
+                                <td class="product-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 02: STAR WARS, YODA -Legendary Jedi Master"><img src="images/starwars_yoda.jpg" height="143px" width="200px"></a></td>
+                                <td class="product-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 04: STAR WARS, PRINCESS LEIA - The Ultimate Heroine!"><img src="images/starwars_princess_leia.jpg" height="143px" width="200px"></a></td>
                             </tr>
                             <tr>
                                 <td class="product-name">Darth Vader</td>
@@ -119,10 +120,10 @@
                                 <td class="product-price"><button class="btn btn-primary" onclick="addtocart">BUY $19.99</button></td>
                             </tr>
                             <tr>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 06: MARVEL UNIVERSE, CAPTAIN AMERICA - America's One-man Army, fighting for the Red, White and Blue"><img src="images/marvel_universe_captain_america.jpg" height="143px" width="200px"></a></td>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 18; MARVEL UNIVERSE, GHOST RIDER - Stunt Riding Antihero"><img src="images/marvel_universe_ghost_rider.jpg" height="143px" width="200px"></a></td>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 20: MARVEL UNIVERSE, DEADPOOL - Superhuman Healer"><img src="images/marvel_universe_deadpool.jpg" height="143px" width="200px"></a></td>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 05: MARVEL UNIVERSE, WOLVERINE - Carnivorous Mutant"><img src="images/marvel_universe_wolverine.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 06: MARVEL UNIVERSE, CAPTAIN AMERICA - America's One-man Army, fighting for the Red, White and Blue"><img src="images/marvel_universe_captain_america.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 18; MARVEL UNIVERSE, GHOST RIDER - Stunt Riding Antihero"><img src="images/marvel_universe_ghost_rider.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 20: MARVEL UNIVERSE, DEADPOOL - Superhuman Healer"><img src="images/marvel_universe_deadpool.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 05: MARVEL UNIVERSE, WOLVERINE - Carnivorous Mutant"><img src="images/marvel_universe_wolverine.jpg" height="143px" width="200px"></a></td>
                             </tr>
                             <tr>
                                 <td class="product-name">Captain America</td>
@@ -137,10 +138,10 @@
                                 <td class="product-price"><button class="btn btn-primary" onclick="addtocart">BUY $19.99</button></td>
                             </tr>
                             <tr>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 70: MARVEL AVENGERS, HAWKEYE - Supremely Talented Archer!"><img src="images/marvel_avengers_hawkeye.jpg" height="143px" width="200px"></a></td>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 68: MARVEL AVENGERS, HULK - Green-skinned, Mascular Humanoid"><img src="images/marvel_avengers_hulk.jpg" height="143px" width="200px"></a></td>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 66: MARVEL AVENGERS, IRON MAN - Ingenious Engineer with a Powered Suit of Armor"><img src="images/marvel_avengers_iron_man.jpg" height="143px" width="200px"></a></td>
-                                <td class="item-image"><a href="#" data-toggle="tooltip" data-placement="bottom" title="VINYL POP 95: MARVEL AVENGERS, SCARLET WITCH - Reality Altering Mutant"><img src="images/marvel_avengers_scarlet_witch.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 70: MARVEL AVENGERS, HAWKEYE - Supremely Talented Archer!"><img src="images/marvel_avengers_hawkeye.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 68: MARVEL AVENGERS, HULK - Green-skinned, Mascular Humanoid"><img src="images/marvel_avengers_hulk.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 66: MARVEL AVENGERS, IRON MAN - Ingenious Engineer with a Powered Suit of Armor"><img src="images/marvel_avengers_iron_man.jpg" height="143px" width="200px"></a></td>
+                                <td class="item-image"><a href="#" class="rich" data-toggle="tooltip" data-placement="bottom" data-html="true" data-title="VINYL POP 95: MARVEL AVENGERS, SCARLET WITCH - Reality Altering Mutant"><img src="images/marvel_avengers_scarlet_witch.jpg" height="143px" width="200px"></a></td>
                             </tr>
                             <tr>
                                 <td class="product-name">Hawkeye</td>
@@ -290,17 +291,8 @@
             </div>
         </div>
 
-
-        <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
 
-                $(function () {
-                    $('[data-toggle="tooltip"]').tooltip()
-                });
-            });
-            </script>
 </body>
 
 </html>
