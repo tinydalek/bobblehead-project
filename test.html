@@ -1,5 +1,28 @@
-// Javascript Task 7. Search Field Functionality
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main_layout.css">
+    <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <!-- Scripts for JavaScript Task 7, Search functionality. -->
+    <script src="javascript/typeahead.bundle.js"></script>
+
+</head>
+
+<body>
+<div class="well">
+    <div class="input-group" id="find">
+        <input class="typeahead" autocomplete="off" type="text" placeholder="Search">
+    </div>
+</div>
+
+<script>
 var substringMatcher = function(strs) {
   return function findMatches(q, cb) {
     var matches, substringRegex;
@@ -36,3 +59,10 @@ $('#find .typeahead').typeahead({
   name: 'items',
   source: substringMatcher(items)
 });
+</script>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

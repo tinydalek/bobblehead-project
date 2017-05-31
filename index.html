@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/main_layout.css">
     <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <!-- Scripts for JavaScript Task 7, Search functionality. -->
+    <script src="bootstrap/javascript/typeahead.bundle.js"></script>
+    <script src="javascript/search.js"></script>
     <!-- Scripts for Custom Bobblehead Canvas Ad -->
     <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
     <script src="javascript/custom_canvas.js"></script>
@@ -17,9 +20,7 @@
     <script src="javascript/tether.min.js"></script>
     <script src="javascript/tooltip.js"></script>
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
-    <!-- Scripts for JavaScript Task 7, Search functionality. -->
-    <script src="javascript/typeahead.bundle.js"></script>
-    <script src="javascript/search.js"></script>
+
 
 </head>
 
@@ -73,14 +74,9 @@
         <div class="container-fluid">
             <div class="row content">
                 <div class="col-sm-12 col-md-2 sidenav">
-                    <div class="">
-                        <div class="well">
-                            <div class="input-group" id="search">
-                                <input type="text" class="form-control" class="typeahead" data-provide="typeahead" placeholder="Search">
-                                <div class="input-group-btn">
-                                    <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-                                </div>
-                            </div>
+                    <div class="well">
+                        <div class="input-group" id="find">
+                            <input class="typeahead" autocomplete="off" type="text" placeholder="Search">
                         </div>
                     </div>
                     <div class="canvas">
@@ -177,7 +173,8 @@
                                         <p>The hit video game Destiny is joining the Bobbleshop family!</p>
                                         <p>From the upcoming video game Destiny 2, releasing September 8th, 2017.</p>
                                         <p>You can now add your favorite Guardians Cayde-6, Ikora and Zavala to your Pop! vinyl
-                                            collection.</p>
+                                            collection.
+                                        </p>
                                         <p>Collect them all this Summer!</p>
                                         <img src="images/news_destiny.jpg" alt="Destiny Bobblehead Image" height="143px" width="200px">
                                     </div>
