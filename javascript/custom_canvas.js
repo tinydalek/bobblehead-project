@@ -26,4 +26,4 @@
         }
 
     }
-    window.onload += canvas;
+    window.onload = canvas;
