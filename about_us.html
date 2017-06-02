@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,23 +9,21 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/main_layout.css">
+    <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
     <!-- Scripts for Custom Bobblehead Canvas Ad -->
     <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
     <script src="javascript/custom_canvas.js"></script>
     <!-- Scripts for google map -->
     <script src="javascript/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBVZ6Lawi20pQe-RSiVg08kZmJg0XoVuvU &callback=myMap"
-        type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVZ6Lawi20pQe-RSiVg08kZmJg0XoVuvU&callback=myMap" type="text/javascript"></script>
 
 </head>
 
 <body>
-    <div id="wrapper">
         <header>
 
             <div class="fill fixed-section">
                 <div id="banner" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -45,13 +43,13 @@
                             <a href="collections.html"><img src="images/banner_shipping.jpg" alt="Free Shipping Banner Ad"></a>
                         </div>
                         <div class="item">
-                            <a hred="collections.html"><img src="images/banner_marvel.jpg" alt="Marvel Banner Ad"></a>
+                            <a href="collections.html"><img src="images/banner_marvel.jpg" alt="Marvel Banner Ad"></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <nav id="main-nav" class="navbar" role="navigation">
+            <nav id="main-nav" class="navbar">
                 <div class="container-fluid">
                     <div class="navbar">
                         <ul class="nav nav-pills nav-justified">
@@ -68,18 +66,16 @@
 
         <div class="container-fluid">
             <div class="row content">
-                <div class="col-sm-12 col-md-2 sidenav">
-                    <div class="">
-                        <div class="well">
-                            <form action="#">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" data-provide="typeahead" placeholder="Search" name="search">
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-                                    </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 sidenav">
+                    <div class="well">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="canvas">
                         <a href="custom_made.html">
@@ -88,17 +84,19 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-7" class="container">
-                    <h2>About Us</h2>
-                    <p>Bobbleshop is a purveyor of pop culture and licensed-focused collectibles company located in Sydney,
+                <div class="col-sm-12 col-md-12 col-lg-7" class="container">
+                    <div id="about">
+                        <h2>About Us</h2>
+                        <p>Bobbleshop is a purveyor of pop culture and licensed-focused collectibles company located in Sydney,
                         Australia. Bobbleshop currently holds hundreds of licenses and the rights to create tens of thousands
                         of characters - one of the largest portfolios in the pop culture and collectibles industry. Bobbleshop’s
                         Pop! Vinyl is the number one stylized vinyl collectible on the market, selling millions of figures
                         to collectors around the world.</p>
+                    </div>
 
                     <div class="row">
-                        <h4>Location:</h4>
-                        <div class="col-sm-12 col-md-3">
+                        <div id="address" class="col-sm-12 col-md-3">
+                            <h4>Location:</h4>
                             <p>Ultimo College,</p>
                             <p>827 George Street,</p>
                             <p>SYDNEY, NSW 2007</p>
@@ -107,9 +105,9 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-3 sidenav">
+                <div class="col-sm-12 col-md-12 col-lg-3 sidenav">
                     <div class="well">
-                        <img class="img-responsive" src="images/bobbleshop_news.jpg" alt="Bobbleshop News Banner" height="100px" width="315px">
+                        <img class="img-responsive" src="images/bobbleshop_news.jpg" alt="Bobbleshop News Banner" height="100" width="315">
 
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
@@ -125,9 +123,10 @@
                                         <p>The hit video game Destiny is joining the Bobbleshop family!</p>
                                         <p>From the upcoming video game Destiny 2, releasing September 8th, 2017.</p>
                                         <p>You can now add your favorite Guardians Cayde-6, Ikora and Zavala to your Pop! vinyl
-                                            collection.</p>
+                                            collection.
+                                        </p>
                                         <p>Collect them all this Summer!</p>
-                                        <img src="images/news_destiny.jpg" alt="Destiny Bobblehead Image" height="143px" width="200px">
+                                        <img class="img-responsive" src="images/news_destiny.jpg" alt="Destiny Bobblehead Image" height="143" width="200">
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +143,7 @@
                                         <p>Now you can take your favorite Overwatch heroes with you on the go with these Reaper
                                             and Tracer Pop! Keychains.</p>
                                         <p>Snap them up and slide them on to your key ring this Summer!</p>
-                                        <img src="images/news_keychain.jpg" alt="Overwatch Keychain Image" height="143px" width="150px">
+                                        <img class="img-responsive" src="images/news_keychain.jpg" alt="Overwatch Keychain Image" height="143" width="150">
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +165,7 @@
                                         <p>In addition, the extremely tall and overly-muscular All Might arrives as a super-sized
                                             6-inch Pop! vinyl!</p>
                                         <p>Collect them this Summer!</p>
-                                        <img src="images/news_anime.jpg" alt="Deku Bobblehead Image" height="143px" width="200px">
+                                        <img class="img-responsive" src="images/news_anime.jpg" alt="Deku Bobblehead Image" height="143" width="200">
                                     </div>
                                 </div>
                             </div>
@@ -180,17 +179,17 @@
             <div class="row content">
 
                 <div class="col-sm-4">
-                    <div class="">
-                        <h4>Connect with us:</h4>
-                        <img src="images/social_media_grey.jpg" height="60" width="230">
+                    <h4>Connect with us:</h4>
+                    <div class="social">
+                        <img class="img-responsive" src="images/social_media_grey.jpg" alt="Social Media Icons" height="60" width="230">
                     </div>
-                    <div class="">
-                        <img src="images/bobbleshop_logo_grey.jpg" height="132" width="350">
+                    <div class="logo">
+                        <img class="img-responsive" src="images/bobbleshop_logo_grey.jpg" alt="Bobbleshop Logo" height="132" width="350">
                     </div>
                 </div>
 
                 <div class="col-sm-4">
-                    <div class="">
+                    <div class="privacy">
                         <h4>Privacy Notice</h4>
 
                         <p>We take precautions to protect your information. When you submit sensitive information via our website,
@@ -206,7 +205,7 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <nav id="footerNav" class="navbar" role="navigation">
+                    <nav id="footerNav" class="navbar">
                         <div class="navbar">
                             <ul class="nav">
                                 <li><a href="index.html">Home</a></li>
@@ -239,8 +238,6 @@
             </div>
         </div>
 
-
-        <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 

@@ -13,7 +13,7 @@ function validateForm() {
         alert ("Your must enter your name.");
         return false;
     }
-    // Validate email address
+    // Validate email address (something has been entered, there is one @ symbol and at least one . after the @)
     else if (email == "") {
         alert ("You must enter your email address.");
         return false;
@@ -35,7 +35,7 @@ function validateForm() {
 		return false;
 	}
 
-    // Validate phone number
+    // Validate phone number (something has been entered and it is between 6 and 11 digits)
     else if (phone == "") {
         alert ("You must enter your phone number.");
         return false;
@@ -45,13 +45,13 @@ function validateForm() {
         return false;
     }
 
-    // Validate select menu
+    // Validate select menu (something has been selected)
     else if (select == "") {
         alert ("You must select an enquiry type.");
         return false;
     }
 
-    // Validate comment box
+    // Validate comment box (something has been entered)
     else if (comment == "") {
         alert ("You must leave a comment.");
         return false;
@@ -68,7 +68,7 @@ function validateForm() {
 
     // If details are confirmed by user, submit the form
     if (confirmed == true) {
-        alert ("Thank you, your enquiry has bee submitted");
+        alert ("Thank you, your enquiry has been submitted");
     }
     return confirmed;
 }

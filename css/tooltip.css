@@ -1,8 +1,12 @@
 .rich + .tooltip > .tooltip-inner {
-  background: lightslategray;
+  background: darkslategray;
+  border-radius: 10%;
+  color: lightgrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
 .rich + .tooltip > .tooltip-arrow {
-  border-bottom-color: lightslategray;
+  border-bottom-color: darkslategray;
 }

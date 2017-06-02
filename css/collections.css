@@ -1,9 +1,15 @@
-h4 {
+h5 {
+    padding-left: 20px;
     text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .product-name {
     text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -22,7 +28,7 @@ button {
 /* Previous button */
 .media-carousel 
 .carousel-control.left {
-    left: -12px;
+    left: -5px;
     background-image: none;
     background: none repeat scroll 0 0 #004d99;
     border: 3px solid #ffffff;
@@ -35,7 +41,7 @@ button {
 /* Next Button */
 .media-carousel 
 .carousel-control.right {
-    right: -12px !important;
+    right: -5px !important;
     background-image: none;
     background: none repeat scroll 0 0 #004d99;
     border: 3px solid #ffffff;

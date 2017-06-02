@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to bottom, lightsteelblue 20%, gainsboro 80%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #banner {
@@ -32,10 +33,74 @@ ul.nav {
     border-radius: 20px;
 }
 
+.table {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+th {
+    font-size: 1.5em;
+}
+
 footer {
     background-color: lightslategrey;
+    color: lightgray;
+    text-decoration: none;
 }
 
 .footer-bottom {
-    background-color: lightsteelblue;
+    background-color: slategray;
+    color: lightgrey;
+}
+
+.social {
+    position: relative;
+    left: 25%;
+}
+
+.logo {
+    position: relative;
+    left: 10%;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.design {
+    text-align: right;
+}
+
+#address {
+    margin: 20px;
+}
+
+#about {
+    margin: 10px;
+}
+
+#map {
+    position: relative;
+    left: 30px;
+    margin-bottom: 20px;
+}
+
+#custom_form {
+    padding: 10px;
+}
+
+#submit {
+    position: relative;
+    left: 40%;
+}
+
+#select {
+    position: relative;
+    left: 15px;
+    padding: 8px;
+}
+
+#radio {
+    position: relative;
+    left: 15px;
 }

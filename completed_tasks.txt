@@ -1,0 +1,46 @@
+COMPLETED TASKS
+
+1. Validate the form on your contact page. Ensure that all text has content, and that the content conforms to requirements (you decide and document what those requirements are).
+
+2. When the form has been validated, show a confirm dialog box that displays the data entered and asks the user if the data entered is correct. If yes, thank the visitor and submit the form. If no, prevent the form from submitting so users can go back and make adjustments where necessary. Ensure the form fields remain populated with data.
+
+6. Add functionality to the index.html page. When the user moves the mouse over one of the images, a brief description of the bobblehead should appear in the form of a rich tooltip. Moving the mouse off the image should make the image description disappear.
+
+10. Create an image gallery that allows the user to move through a selection of 'recommended' bobbleheads. The user should be able to move backward and forward through the selection.
+NOTE: I did this task for all available bobbleheads on my Collections page.
+
+11. Modify the index.html page, so that the news items are listed by headline only. When a headline is selected, a story should open underneath it (moving all the other headlines down).
+
+SCRIPTS
+
+bootstrap/js folder
+
+1. jquery-3.2.1.min.js 
+2. bootstrap.min.js
+
+The bootstrap and jquery scripts were used to provide functionality and responsiveness across the entire website.
+
+I used the javascript built into boostrap to complete Task 10. I did this by using class="carousel slide" to display the images. I used data-interval="fasle" to stop the carousel from rotating. I then used:
+<a data-slide="prev" class="carousel-control left"><</a>
+<a data-slide="next" class="carousel-control right">></a>
+To create the previous and next buttons allowing the user to scroll through the collections.
+
+I used the javascript built into bootstrap to complete Task 11. I did this by using class="panel-collapse collapse". I chose to have the first news item displayed when the page loads using class="panel-collapse collapse in". This item will then collapse, when a new news item is opened.
+
+javascript folder
+
+3. contact_form_validation.js - This script was written to complete Tasks 1 & 2.
+
+4. custom_canvas.js - This script is written to display the Custom Made Bobblehead Canvas.
+
+5. map.js - This script was written to display a google map on the about us page.
+
+6. tether.min.js - I had to include this script to allow Task 6 to work correctly with Bootstrap.
+
+7. tooltip.js - This script was written to complete Task 6.
+
+online
+
+8. http://code.createjs.com/easeljs-0.7.1.min.js - This script was included to display the Custom Bobblehead Canvas.
+
+9. https://maps.googleapis.com/maps/api/js?key=AIzaSyBVZ6Lawi20pQe-RSiVg08kZmJg0XoVuvU&callback=myMap - This is the script for the google maps API key for the map to be displayed on the about us page.
