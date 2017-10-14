@@ -35,12 +35,16 @@ function validateForm() {
 		return false;
 	}
 
-    // Validate phone number (something has been entered and it is between 6 and 11 digits)
+    // Validate phone number (something has been entered and it is between 8 and 11 digits)
     else if (phone == "") {
         alert ("You must enter your phone number.");
         return false;
     }
-    else if (phone.length < 6 || phone.length > 11) {
+        else if (isNaN(phone)) {
+        alert ("You must enter a number.");
+        return false;
+    }
+    else if (phone.length < 8 || phone.length > 11) {
         alert ("The phone number you entered is not valid.");
         return false;
     }
