@@ -33,14 +33,12 @@ ul.nav {
     border-radius: 20px;
 }
 
-.table {
+.table th {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-th {
-    font-size: 1.5em;
-}
+
 
 footer {
     background-color: lightslategrey;
